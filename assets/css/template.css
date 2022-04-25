@@ -1,0 +1,384 @@
+*{
+    font-family: Arial;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+    /* estilizaçao do menu superior */
+header{
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+ }
+
+ .logo{
+     display: flex;
+     align-items: center;
+    
+ }
+  .logo img{
+    width: 220px;
+    height: 110px;
+  }
+
+  .menu{
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul,
+  nav li{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  } 
+
+  nav ul{
+      display: flex;
+  }
+
+  nav a{
+      color: whitesmoke;
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  nav .active a,
+  nav a:hover{
+      background-color: orangered;
+       
+  }
+       /* estilizaçao do banner central da pagina*/
+  #banner{
+      display: flex;
+      justify-content: center;
+      background-image:url("../imagens/artesanalbaner.jpg");
+      background-position: center;
+      background-size: cover;
+      max-height: 670px;
+      min-height: 670px;
+  }
+
+  .column{
+    flex-direction: column;
+  }
+
+ .banner_headline{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex: 1;
+ }
+.banner_headline h1{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-size: 55px;
+    text-shadow: 1px 2px 0px black;
+    max-width: 50%;
+    
+}
+
+.banner_headline h2{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px black;
+    margin-top: 25px;
+    max-width:50%;
+}
+    /* estilizaçao dos tres banners internos*/
+ .banner_options{
+     padding: 0;
+     height: 210px;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .banner1,
+ .banner2,
+ .banner3{
+     flex: 1;
+     color: whitesmoke;
+     padding: 20px;
+ }
+
+ .banner1{
+    background-color: rgb(221, 127, 38);
+ }
+
+ .banner2{
+    background-color: rgb(238, 104, 27);
+ }
+
+ .banner3{
+    background-color: orangered;
+ }
+  
+ .banner_title{
+     font-size: 21px;
+ }
+
+ .banner_description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .banner_options a{
+     border: 1px solid #f5f5f5;
+     padding: 5px;
+     color: #f5f5f5;
+     text-decoration: none;
+ }
+
+ .dias_uteis{
+    display: block;
+    margin-top: 20px;
+    border-bottom:1px solid #f5f5f5;
+ }
+    /*estizaçao da seção de favoritos e  informaçoes*/
+ #geral{
+     display: flex;
+     justify-content: center;
+     background-color: #000;
+ }
+
+ #geral section{
+     flex: 2;
+ }
+
+ #geral aside{
+     flex: 1;
+ }
+
+ .widget_title{
+     margin-top: 30px;
+     margin-bottom: 20px;
+ }
+
+ .widget_title_text{
+     font-size: 21px;
+     color: #f5f5f5;
+     font-weight: bold;
+ }
+
+ .widget_title_bar{
+     width: 50px;
+     height: 2px;
+     background-color: #ff4500;
+     margin-top: 10px
+ }
+    /*Favoritos*/
+#geral{
+    display: flex;
+}
+    
+ .linha1{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .item1,
+ .item2,
+ .item3,
+ .item4,
+ .item5,
+ .item6 {
+     min-width: 130px;
+     height: 150px;
+     background-color: #ff4500;
+     margin-right: 10px;
+     margin-bottom: 10px;
+}
+    /*endereços*/
+.adresses ul,
+.adresses li{
+    margin-bottom: 15px;
+}
+
+.adresses a{
+    border: 1px solid #f5f5f5;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+    /*lançamentos*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+article a{
+    text-decoration: none;
+}
+.news_buger{
+    color: #f5f5f5;
+}
+article .news_buger{
+    display: flex;
+}
+article .date{
+    padding: 10px;
+    background-color: #ff4500;
+    color: #f5f5f5;
+    margin-right: 3px;
+    font-size: 12px;
+}
+article .coment{
+    padding: 10px;
+    background-color: #e25b29;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+article .news_burger_thumb{
+    margin-top: 30px;
+}
+article .news_burger_thumb img{
+    width: 100%;
+    height: auto;
+}
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    text-transform: bold;
+}
+article .burger_description{
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #f5f5f5;
+}
+    /* roda pe*/
+footer{
+    background-color: #ff4500;
+    display: flex;
+    justify-content: center;
+}
+.flexcolum{
+    flex-direction: column;
+}
+.area_footer{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.footer_title{
+    margin-top: 15px;
+}
+.footer_item1,
+.footer_item2,
+.footer_item3{
+    min-width: 250px;
+    flex: 1;
+}
+
+footer .widget_title_bar{
+    background-color: #000;
+}
+.text1{
+    color: #b8b7b7;
+    font-size: 12px;
+    margin-top: 18px;
+}
+footer .icons{
+    margin-top: 12px;
+    display: flex;
+}
+.icon1,
+.icon2,
+.icon3{
+    margin-right: 5px;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    color:#2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.menumobile{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mn_line{
+    height: 3px;
+    background-color: #ff4500;
+}
+
+@media (max-width:600px){
+    #banner{
+        max-height: none;
+        max-width: 600px;
+    }
+    .banner_description{
+        max-width: 100%;
+    }
+    .banner_headline{
+        padding: 15px;
+    }
+    .banner_options{
+        margin-top: 20px;
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside{
+        padding: 20px;
+    }
+    .area_footer{
+        padding: 12px;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .footer_item1, .footer_item2, .footer_item3 {
+        max-width: inherit;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+
+    }
+    header{
+        height: auto;
+    }
+    .menumobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
